@@ -5,3 +5,11 @@
     background: yellow;
     margin: 0 auto;
 }
+
+.block-2 {
+    width: 1000px;
+    height: 200px;
+    background: red;
+    border: 2px solid black;
+    margin: auto;
+}
