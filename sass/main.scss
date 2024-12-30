@@ -1,12 +1,13 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@use "./reset.scss";
+@use "./common.scss";
+@use "./UI-kit/buttons.scss";
+@use "./variables.scss";
 
-@import "//sass/main.scss";
 
-@import "//sass/UI-kit/buttons.scss";
+
+
+
+
 
 
 
