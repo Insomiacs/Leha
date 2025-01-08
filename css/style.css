@@ -4,15 +4,27 @@
   box-sizing: border-box;
 }
 
-.container-btn {
-  width: 487px;
-  height: 320px;
-  background-color: blue;
-  border: 5px solid black;
+.container {
+  padding: 20px;
 }
 
-.btn {
+.container__btn {
+  width: 447px;
+  height: 80px;
   background-color: #2065C8;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.container__btn i {
+  width: 32px;
+  height: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */

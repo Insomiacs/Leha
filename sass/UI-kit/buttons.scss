@@ -1,12 +1,18 @@
 @use "../variables.scss" as *;
 
-.container-btn {
-    width: 487px;
-    height: 320px;
-    background-color: blue;
-    border: 5px solid black;
+.container {
+    padding: 20px;
 }
 
-.btn {
+.container__btn {
+    width: 447px;
+    height: 80px;
     background-color: $blue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container__btn i {
+    width: 32px;
+    height: 32px;
 }
