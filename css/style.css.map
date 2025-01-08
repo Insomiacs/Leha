@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/reset.scss","../sass/UI-kit/buttons.scss","../sass/variables.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;ACDJ;EACI;;;AAGJ;EACI;EACA;EACA,kBCLE;EDMF;EACA;;;AAGJ;EACI","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/reset.scss","../sass/UI-kit/buttons.scss","../sass/variables.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;ACDJ;EACI;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA,kBCRE;EDSF;EACA;EACA;;;AAGJ;EACI;EACA,OCnBG;;;ADsBN;EACG;EACA,OCxBG;EDyBH;EACA","file":"style.css"}

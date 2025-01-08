@@ -9,14 +9,26 @@
 }
 
 .container__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 447px;
   height: 80px;
   background-color: #2065C8;
   border-radius: 10px;
   margin-bottom: 20px;
+  padding: 24px 35px;
 }
 
-.container__btn_icons {
+.container__btn i:first-child {
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.container__btn p:last-child {
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 329px;
   text-align: center;
 }
 
