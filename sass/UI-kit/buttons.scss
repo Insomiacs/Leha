@@ -2,9 +2,10 @@
 
 .container {
     padding: 20px;
+    background-color: black;
 }
 
-.container__btn {
+.btn-static {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,16 +15,62 @@
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 24px 35px;
+    border: none;
 }
 
-.container__btn i:first-child {
+.btn-static i:first-child {
     font-size: 32px;
     color: $white;
  }
 
- .container__btn p:last-child {
+ .btn-static p:last-child {
     font-size: 18px;
     color: $white;
     width: 329px;
     text-align: center;
  }
+
+ .btn-static:hover {
+    background-color: $dark-blue;
+    cursor: pointer;
+ }
+
+ .btn-static:disabled {
+    background-color: $light-blue;
+ }
+
+ .btn-consultation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 447px;
+    height: 80px;
+    background-color: $blue-2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 24px 35px;
+    border: 1px solid $white;
+}
+
+.btn-consultation i:first-child {
+    font-size: 32px;
+    color: $white;
+ }
+
+ .btn-consultation p:last-child {
+    font-size: 18px;
+    color: $white;
+    width: 329px;
+    text-align: center;
+ }
+
+ .btn-consultation:hover  {
+    background-color: $white;
+    cursor: pointer;
+}
+
+.btn-consultation:disabled  {
+    background-color: $gray-2;
+    opacity: 0.5;
+}
+
