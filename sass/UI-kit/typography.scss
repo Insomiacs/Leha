@@ -1,0 +1,18 @@
+//Typography 1920-1280//
+$font-size-headline-1:64px;
+$font-size-headline-2:48px;
+$font-size-headline-3:40px;
+$font-size-headline-4:24px;
+$main-title:140px;
+$large-text:25px;
+$font-size-small:18px;
+$font-size-standart:16px;
+$font-size-mini:14px;
+
+@mixin typography($font-size, $color, $weight) {
+    font-family: "Lato", serif;
+    font-size: $font-size;
+    font-weight: $weight;
+    line-height: 77px;
+    color: $color;
+}

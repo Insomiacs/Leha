@@ -1,4 +1,5 @@
 @use "../variables.scss" as *;
+@use "../UI-kit/typography.scss" as*;
 
 .container {
     padding: 20px;
@@ -50,27 +51,50 @@
     margin-bottom: 20px;
     padding: 24px 35px;
     border: 1px solid $white;
-}
-
-.btn-consultation i:first-child {
-    font-size: 32px;
     color: $white;
- }
-
- .btn-consultation p:last-child {
     font-size: 18px;
-    color: $white;
-    width: 329px;
-    text-align: center;
- }
-
- .btn-consultation:hover  {
-    background-color: $white;
     cursor: pointer;
+
+    i {
+        font-size: 32px;
+    }
+
+    &:hover {
+        background-color:$white;
+        color: $Gradient-2;
+    }
+
 }
 
 .btn-consultation:disabled  {
     background-color: $gray-2;
-
+    opacity: 0.5;
+    pointer-events: none;
 }
 
+.btn-surgery {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    width: 423px;
+    height: 140px;
+    background-color: $white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 25px 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: $gray-2;
+
+    i {
+        font-size: 90px;
+        border-radius: 50%;
+        background-color: $Gradient;
+    }
+}
+
+h1 {
+    @include typography(28px, $white, 600);
+}
