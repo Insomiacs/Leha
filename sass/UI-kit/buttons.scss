@@ -54,6 +54,7 @@
     color: $white;
     font-size: 18px;
     cursor: pointer;
+    font-family: "Lato";
 
     i {
         font-size: 32px;
@@ -83,16 +84,30 @@
     margin-bottom: 20px;
     padding: 25px 40px;
     border: none;
-    font-size: 18px;
+    font-size: $font-size-small;
     font-weight: 500;
     line-height: 22px;
     color: $gray-2;
+    font-family: "Lato";
 
-    i {
-        font-size: 90px;
+    .block-image {
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
         background-color: $Gradient;
+        padding: 18px 21px;
     }
+
+    &:hover{
+        background-color:green;
+        color: $white;
+    }
+}
+
+.btn-surgery:disabled  {
+    background-color: $gray-2;
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 h1 {

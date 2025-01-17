@@ -57,6 +57,7 @@
   color: #FFFFFF;
   font-size: 18px;
   cursor: pointer;
+  font-family: "Lato";
 }
 .btn-consultation i {
   font-size: 32px;
@@ -87,11 +88,29 @@
   font-weight: 500;
   line-height: 22px;
   color: #4C5E78;
+  font-family: "Lato";
 }
-.btn-surgery i {
-  font-size: 90px;
+.btn-surgery .block-image {
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background-color: #F2F5FC;
+  padding: 18px 21px;
+}
+.btn-surgery:hover {
+  background-color: #2065C8;
+  color: #FFFFFF;
+}
+
+.btn-surgery:disabled {
+  background-color: #4C5E78;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.btn-surgery:disabled .block-image:disabled {
+  background-color: #4C5E78;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 h1 {
