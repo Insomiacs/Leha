@@ -56,10 +56,11 @@
         color: $Gradient-2;
     }
 
-    & img:hover {
+    &:hover svg path {
         fill: $Gradient-2;
     }
 }
+
 
 .btn-consultation:disabled  {
     background-color: $gray-2;
@@ -102,15 +103,264 @@
 }
 
  .btn-surgery:disabled {
-        background-color: $light-blue;
-        color: $white;
-        opacity: 0.7;
+    background-color: $light-blue;
+    color: $white;
+    opacity: 0.7;
 
-        .block-image {
-            background-color: $white;
-        }
+    .block-image {
+        background-color: $white;
+    }
+}
+
+.treatment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 40px;
+    background-color: $white;
+    color: $black;
+    border: none;
+    width: 437px;
+    height: 140px;
+    border-radius: 20px;
+    font-family: "Lato";
+    font-size: $font-size-small;
+    margin-bottom: 20px;
+
+    &:hover {
+        color:$Gradient-2;
     }
 
-h1 {
-    @include typography(28px, $white, 600);
+    &:hover .btn-arrow {
+        background-color: $Gradient-2;
+    }
+
+    &:hover .btn-arrow svg path  {
+        stroke:$white;
+    }
+}
+    
+.btn-arrow {
+    border: 1px solid $Gradient-2;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+
+    svg {
+        padding: 20px 22px;
+    }
+}
+
+.treatment:disabled {
+    opacity: 0.9;
+    color: $gray;
+    pointer-events: none;
+
+    & .btn-arrow {
+        background-color: $Gradient-2;
+        opacity: 0.5;
+    }
+
+    & svg path  {
+        stroke:$white;
+    }
+}
+
+.btn-direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-small;
+    font-weight: 600;
+    font-family: "Lato";
+    background-color: $Gradient-2;
+    color: $white;
+    border: none;
+    width: 220px;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+    &:hover {
+        background-color: $dark-blue;
+    }
+}
+
+.btn-direction:disabled {
+    background-color: $light-blue;
+    opacity:0.8;
+}
+
+.btn-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-small;
+    font-weight: 600;
+    font-family: "Lato";
+    background-color: $Gradient-2;
+    color: $white;
+    border: 1px solid $white;
+    width: 162px;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: $white;
+        color: $Gradient-2;
+    }
+}
+
+.btn-about:disabled {
+    background-color: $Gradient-2;
+    color: $white;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.btn-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-small;
+    font-weight: 600;
+    font-family: "Lato";
+    background-color: $white;
+    color: $Gradient-2;
+    border: 2px solid $Gradient-2;
+    width: 437px;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: $Gradient-2;
+        color: white;
+        border: none;
+    }
+}
+
+.btn-subscribe:disabled {
+    background-color: $light-blue;
+    color: $white;
+    pointer-events: none;
+    opacity: 0.7;
+    border: none;
+}
+
+.btn-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-small;
+    font-weight: 600;
+    font-family: "Lato";
+    background-color: $white;
+    color: $Gradient-2;
+    border: 2px solid $Gradient-2;
+    width: 437px;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: $white;
+        color: $Gradient-2;
+        border: none;
+    }
+}
+
+.btn-view:disabled {
+    background-color: $white;
+    color: $Gradient-2;
+    pointer-events: none;
+    opacity: 0.7;
+    border: 2px solid $Gradient-2;
+}
+
+.btn-video {
+    display: flex;
+    align-items: center;
+    width: 117px;
+    height: 72px;
+    color: $white;
+    position: relative;
+    font-family: "Lato";
+    font-size: $font-size-small;
+    margin-bottom: 20px;
+    font-weight: 400;
+    
+    &:hover .btn-ring svg path  {
+        fill: $Gradient-2;
+    }
+}
+
+.btn-ring {
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    background-color: $white;
+    position: absolute;
+    left: 17px;
+    bottom: 19px;
+
+    & svg {
+        padding: 12px 14px;
+    }
+}
+
+//не работает disabled//
+// .btn-video:disabled { 
+//     opacity:0.8;
+//     pointer-events: none;
+//     color: gray;
+//     background-color: red;
+// }
+
+.btn-slide {
+    margin-bottom: 20px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 1px solid $Gradient-2;
+    
+    & svg {
+        padding: 20px 25px;
+    }
+
+    &:hover {
+        background-color: $Gradient-2;
+    }
+
+    &:hover svg path  {
+        stroke:$white;
+    }
+}
+
+//не работает disabled// btn-slide
+
+.btn-slide-up {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: $Gradient-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: $dark-blue;
+    }
+}
+
+//не работает disabled//
+.btn-slide-up:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.btn-vk:hover img  {
+    background-color: url("/img/Vk\ dark-blue.png");
 }

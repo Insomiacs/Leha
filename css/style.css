@@ -51,7 +51,7 @@
   background-color: #FFFFFF;
   color: #2065C8;
 }
-.btn-consultation img:hover {
+.btn-consultation:hover svg path {
   fill: #2065C8;
 }
 
@@ -101,12 +101,230 @@
   background-color: #FFFFFF;
 }
 
-h1 {
-  font-family: "Lato", serif;
-  font-size: 28px;
+.treatment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+  background-color: #FFFFFF;
+  color: #282828;
+  border: none;
+  width: 437px;
+  height: 140px;
+  border-radius: 20px;
+  font-family: "Lato";
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.treatment:hover {
+  color: #2065C8;
+}
+.treatment:hover .btn-arrow {
+  background-color: #2065C8;
+}
+.treatment:hover .btn-arrow svg path {
+  stroke: #FFFFFF;
+}
+
+.btn-arrow {
+  border: 1px solid #2065C8;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+.btn-arrow svg {
+  padding: 20px 22px;
+}
+
+.treatment:disabled {
+  opacity: 0.9;
+  color: #D2D6DD;
+  pointer-events: none;
+}
+.treatment:disabled .btn-arrow {
+  background-color: #2065C8;
+  opacity: 0.5;
+}
+.treatment:disabled svg path {
+  stroke: #FFFFFF;
+}
+
+.btn-direction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 77px;
+  font-family: "Lato";
+  background-color: #2065C8;
   color: #FFFFFF;
+  border: none;
+  width: 220px;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.btn-direction:hover {
+  background-color: #0C51B4;
+}
+
+.btn-direction:disabled {
+  background-color: #89ADE2;
+  opacity: 0.8;
+}
+
+.btn-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Lato";
+  background-color: #2065C8;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  width: 162px;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.btn-about:hover {
+  background-color: #FFFFFF;
+  color: #2065C8;
+}
+
+.btn-about:disabled {
+  background-color: #2065C8;
+  color: #FFFFFF;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.btn-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Lato";
+  background-color: #FFFFFF;
+  color: #2065C8;
+  border: 2px solid #2065C8;
+  width: 437px;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.btn-subscribe:hover {
+  background-color: #2065C8;
+  color: white;
+  border: none;
+}
+
+.btn-subscribe:disabled {
+  background-color: #89ADE2;
+  color: #FFFFFF;
+  pointer-events: none;
+  opacity: 0.7;
+  border: none;
+}
+
+.btn-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Lato";
+  background-color: #FFFFFF;
+  color: #2065C8;
+  border: 2px solid #2065C8;
+  width: 437px;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.btn-view:hover {
+  background-color: #FFFFFF;
+  color: #2065C8;
+  border: none;
+}
+
+.btn-view:disabled {
+  background-color: #FFFFFF;
+  color: #2065C8;
+  pointer-events: none;
+  opacity: 0.7;
+  border: 2px solid #2065C8;
+}
+
+.btn-video {
+  display: flex;
+  align-items: center;
+  width: 117px;
+  height: 72px;
+  color: #FFFFFF;
+  position: relative;
+  font-family: "Lato";
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.btn-video:hover .btn-ring svg path {
+  fill: #2065C8;
+}
+
+.btn-ring {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 17px;
+  bottom: 19px;
+}
+.btn-ring svg {
+  padding: 12px 14px;
+}
+
+.btn-slide {
+  margin-bottom: 20px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px solid #2065C8;
+}
+.btn-slide svg {
+  padding: 20px 25px;
+}
+.btn-slide:hover {
+  background-color: #2065C8;
+}
+.btn-slide:hover svg path {
+  stroke: #FFFFFF;
+}
+
+.btn-slide-up {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #2065C8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.btn-slide-up:hover {
+  background-color: #0C51B4;
+}
+
+.btn-slide-up:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn-vk:hover img {
+  background-color: url("/img/Vk dark-blue.png");
 }
 
 /*# sourceMappingURL=style.css.map */
