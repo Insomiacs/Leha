@@ -1,6 +1,6 @@
 .container {
   padding: 20px;
-  background-color: black;
+  background-color: lightgreen;
 }
 
 .btn-static {
@@ -323,8 +323,63 @@
   opacity: 0.5;
 }
 
-.btn-vk:hover img {
-  background-color: url("/img/Vk dark-blue.png");
+.vk:hover {
+  content: "";
+  background: url("./img/Vk dark-blue.png");
+}
+
+.questionnaire-default {
+  width: 393px;
+  height: 70px;
+  background-color: #F2F5FC;
+  border-radius: 10px;
+  border: none;
+  color: #8EA1BC;
+  padding-left: 25px;
+}
+
+.questionnaire-default:disabled {
+  opacity: 0.5;
+}
+
+.questionnaire-active {
+  width: 393px;
+  height: 70px;
+  background-color: #F2F5FC;
+  border-radius: 10px;
+  border: none;
+  padding-left: 25px;
+}
+.questionnaire-active:active {
+  color: #000000;
+  border-bottom: 5px solid #2065C8;
+}
+
+.questionnaire-error {
+  width: 393px;
+  height: 70px;
+  background-color: #F2F5FC;
+  border-radius: 10px;
+  border: none;
+  padding-left: 25px;
+}
+
+.questionnaire-error:required {
+  color: red;
+}
+
+.questionnaire-hover {
+  width: 393px;
+  height: 70px;
+  background-color: #F2F5FC;
+  border-radius: 10px;
+  border: none;
+  padding-left: 25px;
+}
+.questionnaire-hover:hover {
+  color: #000000;
+  border-bottom: 5px solid #2065C8;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@
 
 .container {
     padding: 20px;
-    background-color: black;
+    background-color: lightgreen;
 }
 
 .btn-static {
@@ -361,6 +361,65 @@
     opacity: 0.5;
 }
 
-.btn-vk:hover img  {
-    background-color: url("/img/Vk\ dark-blue.png");
+.vk:hover {
+    content:('');
+    background: url('./img/Vk\ dark-blue.png');
 }
+
+
+
+.questionnaire-default {
+    width: 393px;
+    height: 70px;
+    background-color: $Gradient;
+    border-radius: 10px;
+    border: none;
+    color: $light-gray;
+    padding-left: 25px;
+}
+
+.questionnaire-default:disabled {
+    opacity: 0.5;
+}
+
+.questionnaire-active {
+    width: 393px;
+    height: 70px;
+    background-color: $Gradient;
+    border-radius: 10px;
+    border: none;
+    padding-left: 25px;
+    
+    &:active {
+        color: #000000;
+        border-bottom: 5px solid $Gradient-2;
+        }
+}
+
+.questionnaire-error {
+    width: 393px;
+    height: 70px;
+    background-color: $Gradient;
+    border-radius: 10px;
+    border: none;
+    padding-left: 25px;
+}
+
+.questionnaire-error:required {
+    color: red;
+}
+
+.questionnaire-hover {
+    width: 393px;
+    height: 70px;
+    background-color: $Gradient;
+    border-radius: 10px;
+    border: none;
+    padding-left: 25px;
+
+    &:hover {
+        color: #000000;
+        border-bottom: 5px solid $Gradient-2;
+        cursor: pointer;
+        }
+}    
