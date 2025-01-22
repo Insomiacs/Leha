@@ -1,10 +1,18 @@
+/* ==========  UI-kit ============= */
+
+/* Basic utils  */
 @use "./reset.scss";
-@use "./common.scss";
-@use "./UI-kit/buttons.scss";
 @use "./variables.scss";
+
+/* Common styles  */
+@use "./common.scss";
+
+/* Imported styles  */
+@use "./UI-kit/buttons.scss";
 @use "./UI-kit/inputs.scss";
 @use "./UI-kit/typography.scss";
 
+/* ==========  end UI-kit ============= */
 
 
 

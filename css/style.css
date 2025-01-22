@@ -1,67 +1,49 @@
-.container {
-  padding: 20px;
-  background-color: lightgreen;
+@charset "UTF-8";
+/* ==========  UI-kit ============= */
+/* Basic utils  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.btn-static {
+/* Common styles  */
+body {
+  font-family: "Montserrat", serif;
+}
+
+/* Imported styles  */
+.container {
+  padding: 20px;
+  background-color: #397b97;
+}
+
+.btn {
   display: flex;
   align-items: center;
-  gap: 75px;
-  width: 447px;
+  gap: 25px;
   height: 80px;
   background-color: #2065C8;
   border-radius: 10px;
   margin-bottom: 20px;
   border: none;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
-  font-family: "Lato";
   padding: 24px 35px;
 }
-.btn-static:hover {
+.btn:hover {
   background-color: #0C51B4;
   color: #FFFFFF;
 }
-
-.btn-static:disabled {
+.btn:disabled {
   background-color: #89ADE2;
   color: #FFFFFF;
   pointer-events: none;
   opacity: 0.8;
 }
 
-.btn-consultation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 447px;
-  height: 80px;
-  background-color: #1D3354;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  font-size: 18px;
-  cursor: pointer;
-  font-family: "Lato";
-  padding: 24px 35px;
-}
-.btn-consultation:hover {
-  background-color: #FFFFFF;
-  color: #2065C8;
-}
-.btn-consultation:hover svg path {
-  fill: #2065C8;
-}
-
-.btn-consultation:disabled {
-  background-color: #4C5E78;
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.btn-surgery {
+.link-services {
   display: flex;
   align-items: center;
   gap: 36px;
@@ -75,54 +57,66 @@
   font-weight: 500;
   line-height: 22px;
   color: #4C5E78;
-  font-family: "Lato";
+  text-decoration: none;
 }
-.btn-surgery .block-image {
+.link-services .block-image {
   width: 90px;
   height: 90px;
   margin-left: 40px;
   border-radius: 50%;
   background-color: #F2F5FC;
 }
-.btn-surgery img {
+.link-services img {
   padding: 18px 21px;
 }
-.btn-surgery:hover {
+.link-services:hover {
   background-color: #2065C8;
   color: #FFFFFF;
 }
-
-.btn-surgery:disabled {
+.link-services.inactive, .link-services:disabled {
   background-color: #89ADE2;
   color: #FFFFFF;
   opacity: 0.7;
+  pointer-events: none;
 }
-.btn-surgery:disabled .block-image {
+.link-services.inactive .block-image, .link-services:disabled .block-image {
   background-color: #FFFFFF;
 }
 
-.treatment {
+.link-continue {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 25px 40px;
   background-color: #FFFFFF;
-  color: #282828;
+  color: #4C5E78;
   border: none;
   width: 437px;
   height: 140px;
   border-radius: 20px;
-  font-family: "Lato";
   font-size: 18px;
   margin-bottom: 20px;
+  text-decoration: none;
 }
-.treatment:hover {
+.link-continue:hover {
   color: #2065C8;
 }
-.treatment:hover .btn-arrow {
-  background-color: #2065C8;
+.link-continue:hover .btn-arrow {
+  background: #2065C8;
 }
-.treatment:hover .btn-arrow svg path {
+.link-continue:hover svg path {
+  stroke: #FFFFFF;
+}
+.link-continue.inactive, .link-continue:disabled {
+  opacity: 0.9;
+  color: #D2D6DD;
+  pointer-events: none;
+}
+.link-continue.inactive .btn-arrow, .link-continue:disabled .btn-arrow {
+  background-color: #2065C8;
+  opacity: 0.5;
+}
+.link-continue.inactive svg path, .link-continue:disabled svg path {
   stroke: #FFFFFF;
 }
 
@@ -131,98 +125,50 @@
   width: 58px;
   height: 58px;
   border-radius: 50%;
-}
-.btn-arrow svg {
-  padding: 20px 22px;
-}
-
-.treatment:disabled {
-  opacity: 0.9;
-  color: #D2D6DD;
-  pointer-events: none;
-}
-.treatment:disabled .btn-arrow {
-  background-color: #2065C8;
-  opacity: 0.5;
-}
-.treatment:disabled svg path {
-  stroke: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-direction {
+.btn-simple {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   font-weight: 600;
-  font-family: "Lato";
   background-color: #2065C8;
   color: #FFFFFF;
   border: none;
-  width: 220px;
   height: 70px;
   border-radius: 10px;
   margin-bottom: 20px;
+  padding: 20px 40px;
+  text-decoration: none;
+  max-width: max-content;
+  flex: 0 0 auto; /* Добавляем это свойство, чтобы элемент не увеличивался или уменьшался */
 }
-.btn-direction:hover {
+.btn-simple:hover {
   background-color: #0C51B4;
 }
-
-.btn-direction:disabled {
+.btn-simple.inactive, .btn-simple:disabled {
   background-color: #89ADE2;
   opacity: 0.8;
-}
-
-.btn-about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Lato";
-  background-color: #2065C8;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  width: 162px;
-  height: 70px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-.btn-about:hover {
-  background-color: #FFFFFF;
-  color: #2065C8;
-}
-
-.btn-about:disabled {
-  background-color: #2065C8;
-  color: #FFFFFF;
   pointer-events: none;
-  opacity: 0.7;
+}
+.btn-simple.btn-wide {
+  width: 437px;
+  max-width: none;
 }
 
-.btn-subscribe {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Lato";
+.btn-transparent {
+  border: 1px solid #FFFFFF;
+  background: none;
+}
+.btn-transparent:hover {
   background-color: #FFFFFF;
   color: #2065C8;
-  border: 2px solid #2065C8;
-  width: 437px;
-  height: 70px;
-  border-radius: 10px;
-  margin-bottom: 20px;
 }
-.btn-subscribe:hover {
-  background-color: #2065C8;
-  color: white;
-  border: none;
-}
-
-.btn-subscribe:disabled {
-  background-color: #89ADE2;
+.btn-transparent.inactive, .btn-transparent:disabled {
   color: #FFFFFF;
   pointer-events: none;
   opacity: 0.7;
@@ -235,7 +181,6 @@
   justify-content: center;
   font-size: 18px;
   font-weight: 600;
-  font-family: "Lato";
   background-color: #FFFFFF;
   color: #2065C8;
   border: 2px solid #2065C8;
@@ -265,7 +210,6 @@
   height: 72px;
   color: #FFFFFF;
   position: relative;
-  font-family: "Lato";
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 400;
@@ -381,5 +325,7 @@
   border-bottom: 5px solid #2065C8;
   cursor: pointer;
 }
+
+/* ==========  end UI-kit ============= */
 
 /*# sourceMappingURL=style.css.map */

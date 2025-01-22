@@ -3,72 +3,37 @@
 
 .container {
     padding: 20px;
-    background-color: lightgreen;
+    background-color: #397b97;
 }
 
-.btn-static {
+.btn {
     display: flex;
     align-items: center;
-    gap: 75px;
-    width: 447px;
+    gap: 25px;
     height: 80px;
     background-color: $Gradient-2;
     border-radius: 10px;
     margin-bottom: 20px;
     border: none;
     color: $white;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
-    font-family: "Lato";
     padding: 24px 35px;
 
     &:hover {
         background-color:$dark-blue;
         color: $white;
     }
-}
 
- .btn-static:disabled {
-    background-color: $light-blue;
-    color: $white;
-    pointer-events: none;
-    opacity: 0.8;
- }
-
- .btn-consultation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 447px;
-    height: 80px;
-    background-color: $blue-2;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 1px solid $white;
-    color: $white;
-    font-size: 18px;
-    cursor: pointer;
-    font-family: "Lato";
-    padding: 24px 35px;
-
-    &:hover {
-        background-color: $white;
-        color: $Gradient-2;
-    }
-
-    &:hover svg path {
-        fill: $Gradient-2;
+    &:disabled {
+        background-color: $light-blue;
+        color: $white;
+        pointer-events: none;
+        opacity: 0.8;
     }
 }
 
-
-.btn-consultation:disabled  {
-    background-color: $gray-2;
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-.btn-surgery {
+.link-services {
     display: flex;
     align-items: center;
     gap: 36px;
@@ -82,7 +47,7 @@
     font-weight: 500;
     line-height: 22px;
     color: $gray-2;
-    font-family: "Lato";
+    text-decoration: none;
 
     .block-image {
         width: 90px;
@@ -100,43 +65,59 @@
         background-color:$Gradient-2;
         color: $white;
     }
-}
 
- .btn-surgery:disabled {
-    background-color: $light-blue;
-    color: $white;
-    opacity: 0.7;
+    &.inactive, &:disabled {
+        background-color: $light-blue;
+        color: $white;
+        opacity: 0.7;
+        pointer-events: none;
 
-    .block-image {
-        background-color: $white;
+        .block-image {
+            background-color: $white;
+        }
     }
 }
 
-.treatment {
+.link-continue {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 25px 40px;
     background-color: $white;
-    color: $black;
+    color: $gray-2;
     border: none;
     width: 437px;
     height: 140px;
     border-radius: 20px;
-    font-family: "Lato";
     font-size: $font-size-small;
     margin-bottom: 20px;
+    text-decoration: none;
 
     &:hover {
-        color:$Gradient-2;
+        color: $blue;
+
+        .btn-arrow {
+            background: $blue;
+        }
+
+        svg path {
+            stroke: $white; 
+        }
     }
 
-    &:hover .btn-arrow {
-        background-color: $Gradient-2;
-    }
+    &.inactive, &:disabled {
+        opacity: 0.9;
+        color: $gray;
+        pointer-events: none;
 
-    &:hover .btn-arrow svg path  {
-        stroke:$white;
+        & .btn-arrow {
+            background-color: $Gradient-2;
+            opacity: 0.5;
+        }
+
+        & svg path  {
+            stroke:$white;
+        }
     }
 }
     
@@ -145,108 +126,60 @@
     width: 58px;
     height: 58px;
     border-radius: 50%;
-
-    svg {
-        padding: 20px 22px;
-    }
-}
-
-.treatment:disabled {
-    opacity: 0.9;
-    color: $gray;
-    pointer-events: none;
-
-    & .btn-arrow {
-        background-color: $Gradient-2;
-        opacity: 0.5;
-    }
-
-    & svg path  {
-        stroke:$white;
-    }
-}
-
-.btn-direction {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: $font-size-small;
+
+}
+
+.btn-simple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
     font-weight: 600;
-    font-family: "Lato";
-    background-color: $Gradient-2;
-    color: $white;
+    background-color: #2065C8;
+    color: #FFFFFF;
     border: none;
-    width: 220px;
     height: 70px;
     border-radius: 10px;
     margin-bottom: 20px;
+    padding: 20px 40px;
+    text-decoration: none;
+    max-width: max-content;
+    flex: 0 0 auto; /* Добавляем это свойство, чтобы элемент не увеличивался или уменьшался */
     
     &:hover {
         background-color: $dark-blue;
     }
+
+    &.inactive, &:disabled {
+        background-color: $light-blue;
+        opacity:0.8;
+        pointer-events: none;
+    }
+
+    &.btn-wide {
+        width: 437px;
+        max-width: none;
+    }
 }
 
-.btn-direction:disabled {
-    background-color: $light-blue;
-    opacity:0.8;
-}
-
-.btn-about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: $font-size-small;
-    font-weight: 600;
-    font-family: "Lato";
-    background-color: $Gradient-2;
-    color: $white;
+.btn-transparent {
     border: 1px solid $white;
-    width: 162px;
-    height: 70px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    background: none;
 
     &:hover {
         background-color: $white;
-        color: $Gradient-2;
+        color: $blue;
     }
-}
 
-.btn-about:disabled {
-    background-color: $Gradient-2;
-    color: $white;
-    pointer-events: none;
-    opacity: 0.7;
-}
-
-.btn-subscribe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: $font-size-small;
-    font-weight: 600;
-    font-family: "Lato";
-    background-color: $white;
-    color: $Gradient-2;
-    border: 2px solid $Gradient-2;
-    width: 437px;
-    height: 70px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-
-    &:hover {
-        background-color: $Gradient-2;
-        color: white;
+    &.inactive, &:disabled {
+        color: $white;
+        pointer-events: none;
+        opacity: 0.7;
         border: none;
     }
-}
-
-.btn-subscribe:disabled {
-    background-color: $light-blue;
-    color: $white;
-    pointer-events: none;
-    opacity: 0.7;
-    border: none;
 }
 
 .btn-view {
@@ -255,7 +188,6 @@
     justify-content: center;
     font-size: $font-size-small;
     font-weight: 600;
-    font-family: "Lato";
     background-color: $white;
     color: $Gradient-2;
     border: 2px solid $Gradient-2;
@@ -286,7 +218,6 @@
     height: 72px;
     color: $white;
     position: relative;
-    font-family: "Lato";
     font-size: $font-size-small;
     margin-bottom: 20px;
     font-weight: 400;
