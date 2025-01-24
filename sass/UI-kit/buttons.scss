@@ -249,25 +249,27 @@
 //     background-color: red;
 // }
 
-.btn-slide {
-    margin-bottom: 20px;
+.slide-cont {
+    border: 1px solid aqua;
     width: 58px;
     height: 58px;
     border-radius: 50%;
-    border: 1px solid $Gradient-2;
-    
-    & svg {
-        padding: 20px 25px;
-    }
-
-    &:hover {
-        background-color: $Gradient-2;
-    }
-
-    &:hover svg path  {
-        stroke:$white;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+    // & svg {
+    //     padding: 20px 25px;
+    // }
+
+    // &:hover {
+    //     background-color: $Gradient-2;
+    // }
+
+    // &:hover svg path  {
+    //     stroke:$white;
+    // }
+
 
 //не работает disabled// btn-slide
 
