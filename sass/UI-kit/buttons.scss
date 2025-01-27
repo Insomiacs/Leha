@@ -182,98 +182,96 @@
     }
 }
 
-.btn-view {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: $font-size-small;
-    font-weight: 600;
-    background-color: $white;
-    color: $Gradient-2;
-    border: 2px solid $Gradient-2;
-    width: 437px;
-    height: 70px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+// .btn-view {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: $font-size-small;
+//     font-weight: 600;
+//     background-color: $white;
+//     color: $Gradient-2;
+//     border: 2px solid $Gradient-2;
+//     width: 437px;
+//     height: 70px;
+//     border-radius: 10px;
+//     margin-bottom: 20px;
 
-    &:hover {
-        background-color: $white;
-        color: $Gradient-2;
-        border: none;
-    }
-}
+//     &:hover {
+//         background-color: $white;
+//         color: $Gradient-2;
+//         border: none;
+//     }
+// }
 
-.btn-view:disabled {
-    background-color: $white;
-    color: $Gradient-2;
-    pointer-events: none;
-    opacity: 0.7;
-    border: 2px solid $Gradient-2;
-}
-
-.btn-video {
-    display: flex;
-    align-items: center;
-    width: 117px;
-    height: 72px;
-    color: $white;
-    position: relative;
-    font-size: $font-size-small;
-    margin-bottom: 20px;
-    font-weight: 400;
-    
-    &:hover .btn-ring svg path  {
-        fill: $Gradient-2;
-    }
-}
-
-.btn-ring {
-    border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    background-color: $white;
-    position: absolute;
-    left: 17px;
-    bottom: 19px;
-
-    & svg {
-        padding: 12px 14px;
-    }
-}
-
-//не работает disabled//
-// .btn-video:disabled { 
-//     opacity:0.8;
+// .btn-view:disabled {
+//     background-color: $white;
+//     color: $Gradient-2;
 //     pointer-events: none;
-//     color: gray;
-//     background-color: red;
+//     opacity: 0.7;
+//     border: 2px solid $Gradient-2;
+// }
+
+// .btn-video {
+//     display: flex;
+//     align-items: center;
+//     width: 117px;
+//     height: 72px;
+//     color: $white;
+//     position: relative;
+//     font-size: $font-size-small;
+//     margin-bottom: 20px;
+//     font-weight: 400;
+    
+//     &:hover .btn-ring svg path  {
+//         fill: $Gradient-2;
+//     }
+// }
+
+// .btn-ring {
+//     border-radius: 50%;
+//     width: 38px;
+//     height: 38px;
+//     background-color: $white;
+//     position: absolute;
+//     left: 17px;
+//     bottom: 19px;
+
+//     & svg {
+//         padding: 12px 14px;
+//     }
 // }
 
 .slide-cont {
-    border: 1px solid aqua;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #FFFFFF;
+    border: 1px solid $Gradient-2;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+    &svg {
+        fill: $Gradient-2;
+    }
+
+    &:hover {
+        background-color: $Gradient-2;
+    }
+
+    &:hover svg path  {
+        stroke:$white;
+    }
+
+    &.inactive {
+        opacity:0.8;
+        pointer-events: none;
+    }
 }
-    // & svg {
-    //     padding: 20px 25px;
-    // }
 
-    // &:hover {
-    //     background-color: $Gradient-2;
-    // }
-
-    // &:hover svg path  {
-    //     stroke:$white;
-    // }
-
-
-//не работает disabled// btn-slide
-
-.btn-slide-up {
+.slide-up {
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -286,73 +284,111 @@
     &:hover {
         background-color: $dark-blue;
     }
+
+    &.inactive {
+        opacity:0.8;
+        pointer-events: none;
+        background-color: $light-blue;
+    }
 }
 
-//не работает disabled//
-.btn-slide-up:disabled {
-    pointer-events: none;
-    opacity: 0.5;
+.link-vk {
+    display: block;
+    margin-bottom: 20px;
+
+    & svg rect:hover {
+        fill: $dark-blue;
+    }
+
+    &.inactive svg rect  {
+        opacity:0.8;
+        pointer-events: none;
+        fill: $light-blue;
+    }
 }
 
-.vk:hover {
-    content:('');
-    background: url('./img/Vk\ dark-blue.png');
+.link-call {
+    display: block;
+    margin-bottom: 20px;
+
+    & svg rect:hover {
+        fill: $dark-blue;
+    }
+
+    &.inactive svg rect  {
+        opacity:0.8;
+        pointer-events: none;
+        fill: $light-blue;
+    }
 }
 
+.link-messeng {
+    display: block;
+    margin-bottom: 20px;
 
+    & svg rect:hover {
+        fill: $dark-blue;
+    }
 
-.questionnaire-default {
+    &.inactive svg rect  {
+        opacity:0.8;
+        pointer-events: none;
+        fill: $light-blue;
+    }
+}
+
+.form-bid {
+    margin-bottom:20px;
+    display: flex;
+    flex-direction: column;
+
+    & label {
+        margin-bottom: 9px;
+    }
+
+    &.inactive {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.name {
     width: 393px;
     height: 70px;
     background-color: $Gradient;
     border-radius: 10px;
-    border: none;
-    color: $light-gray;
+    border: 0;
+    color: $black;
     padding-left: 25px;
-}
+    outline: none;
 
-.questionnaire-default:disabled {
-    opacity: 0.5;
-}
-
-.questionnaire-active {
-    width: 393px;
-    height: 70px;
-    background-color: $Gradient;
-    border-radius: 10px;
-    border: none;
-    padding-left: 25px;
-    
-    &:active {
+    &:focus {
         color: #000000;
-        border-bottom: 5px solid $Gradient-2;
-        }
-}
-
-.questionnaire-error {
-    width: 393px;
-    height: 70px;
-    background-color: $Gradient;
-    border-radius: 10px;
-    border: none;
-    padding-left: 25px;
-}
-
-.questionnaire-error:required {
-    color: red;
-}
-
-.questionnaire-hover {
-    width: 393px;
-    height: 70px;
-    background-color: $Gradient;
-    border-radius: 10px;
-    border: none;
-    padding-left: 25px;
+        border-bottom: 3px solid $Gradient-2;
+        cursor: pointer;
+    }
 
     &:hover {
         color: #000000;
-        border-bottom: 5px solid $Gradient-2;
+        border-bottom: 3px solid $Gradient-2;
         cursor: pointer;
-        }
-}    
+    }
+}
+
+// Говорил Active не делать//
+
+// .questionnaire-active {
+//     width: 393px;
+//     height: 70px;
+//     background-color: $Gradient;
+//     border-radius: 10px;
+//     border: none;
+//     padding-left: 25px;
+    
+//     &:active {
+//         color: #000000;
+//         border-bottom: 5px solid $Gradient-2;
+//         }
+// }
+
+   
