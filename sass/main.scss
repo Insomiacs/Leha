@@ -18,11 +18,33 @@
 .wrapper {
     height: 229px;
     
-    &img {
-        display: block;
-        margin: auto;
+    img {
+        display: flex;
+        margin: 0 auto 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-item {
+        display: flex;
+        justify-content: space-between;
+        width: 631px;
+        height: 56px;
+        list-style: none;
+        font-family: "Lato", serif;
+        font-weight: 400;
+        font-size: 18px;
+
+        .item {
+            display: flex;
+            align-items: center;
+        }
     }
 }
+
 
 
 
