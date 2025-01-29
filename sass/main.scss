@@ -15,7 +15,14 @@
 /* ==========  end UI-kit ============= */
 
 
-
+.wrapper {
+    height: 229px;
+    
+    &img {
+        display: block;
+        margin: auto;
+    }
+}
 
 
 

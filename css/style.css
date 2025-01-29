@@ -217,6 +217,14 @@ body {
 .btn-video .text {
   margin-left: -5px;
 }
+.btn-video:hover .play svg path {
+  fill: #2065C8;
+}
+.btn-video.inactive {
+  opacity: 0.5;
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.3137254902);
+}
 
 .slide-cont {
   display: flex;
@@ -337,5 +345,12 @@ body {
 }
 
 /* ==========  end UI-kit ============= */
+.wrapper {
+  height: 229px;
+}
+.wrapperimg {
+  display: block;
+  margin: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
