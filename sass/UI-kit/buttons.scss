@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     gap: 25px;
+    width: 447px;
     height: 80px;
     background-color: $Gradient-2;
     border-radius: 10px;
@@ -172,6 +173,14 @@
     &:hover {
         background-color: $white;
         color: $blue;
+
+        svg path {
+            fill: $Gradient-2;
+        }
+    }
+
+    &:hover svg path {
+        fill: $Gradient-2;
     }
 
     &.inactive, &:disabled {

@@ -1,0 +1,47 @@
+
+header {
+    height: 229px;
+    position: relative;
+
+   .phone {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-family: "lato", "Montserrat";
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    img {
+        display: flex;
+        margin: 0 auto 0;
+        padding-top: 12px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-item {
+        display: flex;
+        justify-content: space-between;
+        width: 631px;
+        height: 56px;
+        list-style: none;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: "lato", "Montserrat";
+        color: #282828;
+
+        .item {
+            display: flex;
+            align-items: center;
+        }
+
+        .item-icon {
+            gap: 5px;
+        }
+    }
+}
