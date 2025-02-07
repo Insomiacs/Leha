@@ -572,7 +572,7 @@ body {
   width: 438px;
   padding: 73px 50px;
   background-color: #2065C8;
-  background-image: url("../img/Vector (2).png");
+  background-image: url("../");
   border-radius: 20px;
   background-repeat: no-repeat;
   background-position: bottom 31px right -1px;
@@ -758,7 +758,6 @@ body {
   border-radius: 20px;
   width: 410px;
   background-color: #bb1d1d;
-  background-image: url();
 }
 .stock .price .record-empty p {
   text-align: center;
