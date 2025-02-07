@@ -757,10 +757,10 @@ body {
 .stock .price .record-empty {
   border-radius: 20px;
   width: 410px;
-  background-color: #FFFFFF;
-  background-image: url("./i");
+  background-color: #bb1d1d;
+  background-image: url();
 }
-.stock .price .record-empty .promotion-empty {
+.stock .price .record-empty p {
   text-align: center;
   padding: 243px 64px;
   font-weight: 600;
