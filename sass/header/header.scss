@@ -1,5 +1,6 @@
+@use "../variables.scss" as *;
 
-header {
+.header {
     height: 229px;
     position: relative;
 
@@ -11,6 +12,7 @@ header {
         font-weight: 400;
         font-size: 18px;
         text-decoration: none;
+        color: $black;
     }
     
     img {
@@ -24,20 +26,24 @@ header {
         justify-content: center;
     }
 
-    .list-item {
+    .list {
         display: flex;
         justify-content: space-between;
         width: 631px;
         height: 56px;
         list-style: none;
-        font-weight: 400;
-        font-size: 18px;
-        font-family: "lato", "Montserrat";
-        color: #282828;
 
-        .item {
+        &-item {
             display: flex;
             align-items: center;
+
+            a {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 18px;
+                font-family: "lato", "Montserrat";
+                color:$black;
+            }
         }
 
         .item-icon {
