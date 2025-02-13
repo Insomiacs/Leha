@@ -1,0 +1,62 @@
+@use "../variables.scss" as *;
+@use "../UI-kit/typography.scss" as *;
+
+.service {
+    position: relative;
+    margin-top: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    .service-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link-medical {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        color: #4C5E78;
+        left: 0;
+        top: 9px;
+    }
+
+    .title-text {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 57px;
+
+        p:first-child {
+            color: #2065C8;
+        }
+    
+        p:last-child {
+            color: #282828;
+        }
+    }
+
+    .btn-simple {
+        position: absolute;
+        top: 37px;
+        right: 40px;
+    }
+
+    .row {
+        display: flex;
+        margin-top: 48px;
+        gap: 30px;
+        height: 710px;
+
+       .row-img {
+            width: 438px;
+            border-radius: 20px;
+        }
+
+        .row-service {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 30px;
+        }
+    }
+}

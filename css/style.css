@@ -54,7 +54,7 @@ body {
   border-radius: 10px;
   margin-bottom: 20px;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   color: #4C5E78;
@@ -465,57 +465,6 @@ body {
   padding: 48px 0 48px 48px;
 }
 
-.service {
-  position: relative;
-  margin-top: 120px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-.service .service-menu {
-  display: flex;
-  justify-content: center;
-}
-.service .link-medical {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  color: #4C5E78;
-  left: 0;
-  top: 9px;
-}
-.service .title-text {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 57px;
-}
-.service .title-text p:first-child {
-  color: #2065C8;
-}
-.service .title-text p:last-child {
-  color: #282828;
-}
-.service .btn-simple {
-  position: absolute;
-  top: 37px;
-  right: 40px;
-}
-.service .row {
-  display: flex;
-  margin-top: 48px;
-  gap: 30px;
-  height: 710px;
-}
-.service .row .row-img {
-  width: 438px;
-  border-radius: 20px;
-}
-.service .row .row-service {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .personal {
   position: relative;
   height: 980px;
@@ -572,7 +521,7 @@ body {
   width: 438px;
   padding: 73px 50px;
   background-color: #2065C8;
-  background-image: url("../");
+  background-image: url("../img/Vector (3).png");
   border-radius: 20px;
   background-repeat: no-repeat;
   background-position: bottom 31px right -1px;
@@ -752,12 +701,16 @@ body {
   top: 20px;
   border-radius: 10px;
   color: #2065C8;
-  font-family: "lato";
+  font-family: "Montserrat";
 }
 .stock .price .record-empty {
+  position: relative;
   border-radius: 20px;
   width: 410px;
-  background-color: #bb1d1d;
+  background-color: #FFFFFF;
+  background-image: url("../img/Vector blue.png");
+  background-repeat: no-repeat;
+  background-position: bottom 31px right -1px;
 }
 .stock .price .record-empty p {
   text-align: center;
@@ -766,6 +719,302 @@ body {
   font-size: 35px;
   line-height: 48px;
   color: #2065C8;
+}
+
+.feedback {
+  display: flex;
+  position: relative;
+  margin-top: 120px;
+  height: 711px;
+  margin-bottom: 120px;
+}
+.feedback .back-doc {
+  position: absolute;
+  z-index: 1;
+  width: 700px;
+  right: 0;
+}
+.feedback .title-specialist {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #FFFFFF;
+  width: 1337px;
+  border-radius: 50px;
+  z-index: 2;
+  height: 711px;
+}
+.feedback .link-specialists {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  left: 40px;
+  top: 129px;
+  color: #4C5E78;
+}
+.feedback .attention {
+  position: absolute;
+  left: 40px;
+  bottom: 120px;
+  width: 246px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #4C5E78;
+}
+.feedback .title-text {
+  width: 900px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 57px;
+  margin-top: 120px;
+}
+.feedback .title-text p:first-child {
+  color: #282828;
+}
+.feedback .title-text p:last-child {
+  color: #2065C8;
+}
+.feedback .title-text .form-bid {
+  width: 534px;
+  margin-top: 13px;
+}
+.feedback .title-text .form-bid label {
+  margin-top: 48px;
+  font-size: 18px;
+  color: #4C5E78;
+  font-family: "Montserrat";
+  margin: 0;
+}
+.feedback .title-text .form-bid input {
+  width: 534px;
+}
+.feedback .title-text .btn-send {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.feedback .title-text .btn-send a {
+  margin-bottom: 0;
+}
+.feedback .title-text .btn-send p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #4C5E78;
+}
+.feedback .title-text .btn-send p span {
+  color: #2065C8;
+}
+
+.navigation {
+  position: relative;
+  margin-left: 40px;
+  height: 711px;
+}
+.navigation .title-specialist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.navigation .link-specialists {
+  position: absolute;
+  left: 53px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.navigation .title-text p {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.navigation .title-text p span {
+  color: #2065C8;
+}
+.navigation .nav {
+  position: relative;
+  overflow: hidden;
+}
+.navigation .nav .map {
+  position: relative;
+  width: 1600px;
+  height: 616px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: none;
+}
+.navigation .cont-details {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  position: absolute;
+  width: 448px;
+  height: 500px;
+  top: 150px;
+  right: 209px;
+  background-color: #FFFFFF;
+  padding: 56px 48px;
+  border-radius: 20px;
+  font-family: "Montserrat";
+}
+.navigation .cont-details .cont-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+.navigation .cont-details .location {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.navigation .cont-details .location .loc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.navigation .cont-details .location .loc p:first-child {
+  color: #8EA1BC;
+}
+.navigation .cont-details .link-icon {
+  display: flex;
+  gap: 15px;
+}
+.navigation .slide-up {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  height: 500px;
+}
+footer .container-footer {
+  width: 100%;
+  padding: 80px 40px 30px;
+  border-top-left-radius: 50px;
+  background-color: #FFFFFF;
+}
+footer .page-footer-about {
+  display: flex;
+  gap: 137px;
+  margin-bottom: 49px;
+}
+footer .page-footer-about .footer-title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 674px;
+}
+footer .page-footer-about .footer-title p {
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-size: 22px;
+  line-height: 30px;
+}
+footer .page-footer-about .footer-title .chief-doc {
+  display: flex;
+  gap: 25px;
+}
+footer .page-footer-about .footer-title .chief-doc img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+footer .page-footer-about .footer-title .chief-doc p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+footer .page-footer-about .footer-title .chief-doc p:last-child {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #8EA1BC;
+}
+footer .page-footer-about .nav-list {
+  display: flex;
+  flex-direction: column;
+}
+footer .page-footer-about .nav-list .link-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+footer .page-footer-about .nav-list a {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #282828;
+}
+footer .line {
+  border: 1px solid #F2F5FC;
+}
+footer .footer-text {
+  display: flex;
+  gap: 20px;
+  color: #8EA1BC;
+  margin-top: 31px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+footer .page-footer-contacts {
+  background-color: #2065C8;
+  padding: 80px 144px;
+  border-top-right-radius: 50px;
+}
+footer .page-footer-contacts .cont-details {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  width: 368px;
+  font-family: "Montserrat";
+  color: #FFFFFF;
+}
+footer .page-footer-contacts .cont-details .cont-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+footer .page-footer-contacts .cont-details .location {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+footer .page-footer-contacts .cont-details .link-icon {
+  display: flex;
+  gap: 15px;
+}
+footer .page-footer-contacts .cont-details .link-icon .link-vk:hover rect {
+  fill: #FFFFFF;
+}
+footer .page-footer-contacts .cont-details .link-icon .link-vk:hover path {
+  fill: #2065C8;
+}
+footer .page-footer-contacts .cont-details .link-icon .link-call:hover rect {
+  fill: #FFFFFF;
+}
+footer .page-footer-contacts .cont-details .link-icon .link-call:hover path {
+  fill: #2065C8;
+}
+footer .page-footer-contacts .cont-details .link-icon .link-messeng:hover rect {
+  fill: #FFFFFF;
+}
+footer .page-footer-contacts .cont-details .link-icon .link-messeng:hover path {
+  fill: #2065C8;
 }
 
 /*# sourceMappingURL=style.css.map */
