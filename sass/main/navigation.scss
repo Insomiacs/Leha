@@ -1,0 +1,96 @@
+@use "../variables.scss" as *;
+@use "../UI-kit/typography.scss" as *;
+
+.navigation {
+    position: relative;
+    margin-left: 40px;
+    height: 711px;
+
+    .title-specialist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+
+    .link-specialists {
+        position: absolute;
+        left: 53px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .title-text p {
+        font-family: 'Montserrat';
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 48px;
+
+        span {
+            color: $Gradient-2;
+        }
+    }
+
+    .nav {
+        position: relative;
+        overflow: hidden;
+
+        .map {
+            position: relative;
+            width: 1600px;
+            height: 616px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border: none;
+        }
+    }
+
+    .cont-details {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        position: absolute;
+        width: 448px;
+        height: 500px;
+        top: 150px;
+        right: 209px;
+        background-color: $white;
+        padding: 56px 48px;
+        border-radius: 20px;
+        font-family: 'Montserrat';  
+
+        .cont-title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .location {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .loc {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                p:first-child {
+                    color: $light-gray;
+                }
+            }
+        }
+
+        .link-icon {
+            display: flex;
+            gap: 15px;
+        }
+    }
+
+    .slide-up {
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+    }
+}

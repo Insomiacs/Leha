@@ -465,6 +465,57 @@ body {
   padding: 48px 0 48px 48px;
 }
 
+.service {
+  position: relative;
+  margin-top: 120px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.service .service-menu {
+  display: flex;
+  justify-content: center;
+}
+.service .link-medical {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #4C5E78;
+  left: 0;
+  top: 9px;
+}
+.service .title-text {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57px;
+}
+.service .title-text p:first-child {
+  color: #2065C8;
+}
+.service .title-text p:last-child {
+  color: #282828;
+}
+.service .btn-simple {
+  position: absolute;
+  top: 37px;
+  right: 40px;
+}
+.service .row {
+  display: flex;
+  margin-top: 48px;
+  gap: 30px;
+  height: 710px;
+}
+.service .row .row-img {
+  width: 438px;
+  border-radius: 20px;
+}
+.service .row .row-service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .personal {
   position: relative;
   height: 980px;
@@ -893,6 +944,7 @@ footer {
   width: 100%;
   display: flex;
   height: 500px;
+  background-color: #eaecf0;
 }
 footer .container-footer {
   width: 100%;

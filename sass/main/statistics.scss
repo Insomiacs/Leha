@@ -1,0 +1,37 @@
+@use "../variables.scss" as *;
+@use "../UI-kit/typography.scss" as *;
+
+.statistics {
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/backr-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .statistics-about {
+        display: flex;
+        justify-content: center;
+        color: $white;
+        font-weight: 600;
+        width: 1327px;
+        gap: 200px;
+
+        .about-us {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .about-us p:first-child {
+            font-size: $main-title;
+        }
+
+        .about-us p:last-child {
+            text-align: center;
+            font-weight: 400;
+            font-size: $font-size-standart;
+        }
+    }
+}

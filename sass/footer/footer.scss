@@ -1,0 +1,156 @@
+@use "../variables.scss" as *;
+@use "../UI-kit/typography.scss" as *;
+
+footer {
+    width: 100%;
+    display: flex;
+    height: 500px;
+    background-color: #eaecf0;
+    
+
+    .container-footer {
+        width: 100%;
+        padding: 80px 40px 30px;
+        border-top-left-radius: 50px;
+        background-color: $white;
+    }
+
+    .page-footer-about {
+        display: flex;
+        gap: 137px;
+        margin-bottom: 49px;
+
+        & .footer-title {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 674px;
+
+            p {
+                font-weight: 400;
+                font-family: 'Montserrat';
+                font-size: 22px;
+                line-height: 30px;
+            }
+
+            .chief-doc {
+                display: flex;
+                gap: 25px;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50px;
+                }
+
+                p:first-child {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    margin-bottom: 8px;
+                }
+
+                p:last-child {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    color: $light-gray;
+                }
+            }
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: column;
+
+            .link-title {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 20px;
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+
+    .line {
+        border: 1px solid $Gradient;
+    }
+
+    .footer-text {
+        display: flex;
+        gap: 20px;
+        color: $light-gray;
+        margin-top: 31px;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        font-family: 'Montserrat';
+    }
+
+    .page-footer-contacts {
+        background-color: $Gradient-2;
+        padding: 80px 144px ;
+        border-top-right-radius: 50px;
+
+        .cont-details {
+            display: flex;
+            gap: 35px;
+            flex-direction: column;
+            width: 368px;
+            font-family: 'Montserrat';
+            color: $white;
+
+            .cont-title {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            .location {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            .link-icon {
+                display: flex;
+                gap: 15px;
+
+                .link-vk:hover rect {
+                    fill: $white;
+                }
+
+                .link-vk:hover path {
+                    fill: $Gradient-2;
+                }
+
+                .link-call:hover rect {
+                    fill: $white;
+                }
+
+                .link-call:hover path {
+                    fill: $Gradient-2;
+                }
+
+                .link-messeng:hover rect {
+                    fill: $white;
+                }
+
+                .link-messeng:hover path {
+                    fill: $Gradient-2;
+                }
+            }
+        }
+    }
+}
