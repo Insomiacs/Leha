@@ -43,20 +43,27 @@
     }
 
     .row {
-        display: flex;
+        display: grid;
         margin-top: 48px;
         gap: 30px;
-        height: 710px;
+        
 
        .row-img {
             width: 438px;
             border-radius: 20px;
+            height: 710px;
         }
 
         .row-service {
             display: flex;
             flex-wrap: wrap; 
             gap: 30px;
+
+            .link-services {
+                margin-bottom: 0;
+                width: 490px;
+                height: 153px;
+            }
         }
     }
 }

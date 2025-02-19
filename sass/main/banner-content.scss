@@ -34,6 +34,7 @@
         background-color: #FFFFFF;
     }
 
+    //сделать две кнопки button внутри svg//
     .slide-arrow {
         display: flex;
         align-items: center;
@@ -47,6 +48,7 @@
         border-top-right-radius: 10px;
     }
 
+    //сделать кнопку(button) вместо div
     .btn-video {
         position: absolute;
         right: 30px;
@@ -70,6 +72,7 @@
         gap: 40px;
         font-size: 18px;
 
+        //вместо div сделать ссылку <а>//
         .contacts-icon i {
             margin-right: 16px;
         }
