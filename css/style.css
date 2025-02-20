@@ -501,24 +501,28 @@ body {
   right: 40px;
 }
 .service .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  grid-template-rows: 1fr;
   margin-top: 48px;
   gap: 30px;
 }
-.service .row .row-img {
-  width: 438px;
+.service .row .row-img > img {
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
-  height: 710px;
+  object-fit: cover;
 }
 .service .row .row-service {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 448px);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 30px;
 }
 .service .row .row-service .link-services {
   margin-bottom: 0;
-  width: 490px;
   height: 153px;
+  width: 448px;
 }
 
 .personal {

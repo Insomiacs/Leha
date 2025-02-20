@@ -44,26 +44,32 @@
 
     .row {
         display: grid;
+        grid-template-columns:1fr 3.5fr;
+        grid-template-rows: 1fr;
         margin-top: 48px;
         gap: 30px;
         
 
-       .row-img {
-            width: 438px;
-            border-radius: 20px;
-            height: 710px;
-        }
+        .row-img > img{
+            width: 100%;
+            height: 100%;
+            //  background-image: url('..//..//img/Stethoscope.png');
+             border-radius: 20px;
+             object-fit: cover;
+            //  background-size: cover;
+         }
 
-        .row-service {
-            display: flex;
-            flex-wrap: wrap; 
-            gap: 30px;
+         .row-service {
+             display: grid;
+             grid-template-columns:repeat(3,448px);
+             grid-template-rows: 1fr 1fr 1fr 1fr;
+             gap: 30px;
 
-            .link-services {
-                margin-bottom: 0;
-                width: 490px;
-                height: 153px;
-            }
+             .link-services {
+                 margin-bottom: 0;
+                 height: 153px;
+                 width: 448px;
+             }
         }
-    }
+     }
 }
