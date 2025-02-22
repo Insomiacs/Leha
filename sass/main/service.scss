@@ -8,24 +8,42 @@
     margin-right: 40px;
 
     .service-menu {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 30px;
     }
 
     .link-medical {
-        position: absolute;
         display: flex;
         align-items: center;
+        height: max-content;
         gap: 7px;
         color: #4C5E78;
         left: 0;
         top: 9px;
+
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $Gradient-2;
+        }
+
     }
 
     .title-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        grid-column: 2/5;
         font-size: 48px;
         font-weight: 600;
         line-height: 57px;
+
+        .btn-simple {
+            margin-bottom: 0;
+        }
 
         p:first-child {
             color: #2065C8;
@@ -37,39 +55,31 @@
     }
 
     .btn-simple {
-        position: absolute;
         top: 37px;
         right: 40px;
     }
 
-    .row {
-        display: grid;
-        grid-template-columns:1fr 3.5fr;
-        grid-template-rows: 1fr;
-        margin-top: 48px;
-        gap: 30px;
-        
+    .row-service {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: repeat(5, auto);
+         grid-gap:30px;
 
-        .row-img > img{
-            width: 100%;
-            height: 100%;
-            //  background-image: url('..//..//img/Stethoscope.png');
-             border-radius: 20px;
-             object-fit: cover;
-            //  background-size: cover;
+         .row-img {
+            grid-row: 1/5;
+
+                img {
+                    width: 100%;
+                    min-height: 100%;
+                    border-radius: 20px;
+                }
          }
 
-         .row-service {
-             display: grid;
-             grid-template-columns:repeat(3,448px);
-             grid-template-rows: 1fr 1fr 1fr 1fr;
-             gap: 30px;
-
-             .link-services {
-                 margin-bottom: 0;
-                 height: 153px;
-                 width: 448px;
-             }
-        }
-     }
+         .link-services {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+         }
+    }
 }
+
